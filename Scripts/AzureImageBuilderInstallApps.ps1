@@ -1,8 +1,6 @@
-﻿# Script to setup golden image with Azure Image Builder
-
+# Script to setup golden image with Azure Image Builder
 # Create a folder
 New-Item -Path 'C:\temp' -ItemType Directory -Force | Out-Null
-
 # Install Office 365  
 $url = "https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_12130-20272.exe"
 $output = 'C:\temp\odt.exe'
