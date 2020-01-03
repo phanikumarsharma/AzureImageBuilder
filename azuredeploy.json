@@ -32,7 +32,7 @@
 	"variables": {
         "randomGUID":"[newGuid()]",
         "ScriptUri":"https://raw.githubusercontent.com/phanikumarsharma/AzureImageBuilder/master/Scripts/AzureImageBuilderInstallApps.ps1",
-		"imageTemplateName": "[concat('AIB',uniqueString('deployment().name',parameters('randomGUID')))]",
+		"imageTemplateName": "[concat('AIB',uniqueString('deployment().name',variables('randomGUID')))]",
 		"ManagedImageId": "[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Compute/images/',parameters('ManagedImageName'))]"
 	},
 	"resources": [
